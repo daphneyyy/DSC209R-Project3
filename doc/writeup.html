@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <title>project3-write up</title>
+    </head>
+    <body>
+        <a href="../index.html">Home</a>
+        <h2>Project Write-Up</h2>
+
+        <section>
+            <h3>Rationale for my design decisions</h3>
+            <p>
+                The goal of this visualization is to show the relationship
+                between clinic/provider
+                access and the out-of-state abortion rate. I decided to use a
+                choropleth map of the
+                United States with two sliders because this format makes it easy
+                to see geographic
+                patterns. The map helps show which regions have lower access,
+                and the sliders let
+                users filter states based on clinic and provider access levels.
+            </p>
+        </section>
+
+        <section>
+            <h3>Development process</h3>
+            <p>
+                I worked on this project by myself, and it took me around 12
+                hours to finish. I spent
+                some time choosing the topic and thinking about how to represent
+                the data in a clear
+                and simple way.
+            </p>
+
+            <p>
+                I had trouble at first finding the correct source for the United
+                States geographic map data.
+                After I found the right file, I did some data cleaning,
+                including mapping state names to FIPS codes.
+                I then added two sliders as interactive elements. These sliders
+                work as thresholds
+                and highlight states whose clinic and provider access fall below
+                the values
+                selected by the user. I experimented with both "OR" and "AND"
+                filtering, and in the end I chose
+                the "AND" version because it shows states with consistently low
+                access in both measures.
+            </p>
+        </section>
+
+    </body>
+</html>
