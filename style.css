@@ -1,0 +1,48 @@
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#filter-sliders {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#filter-sliders input[type="range"] {
+    width: 300px;
+    margin-left: 10px;
+}
+
+#filter-sliders div {
+    margin-top: 10px;
+}
+
+#graphs {
+    display: grid;
+    justify-items: center;
+    align-items: start;
+}
+
+.title {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#us-map {
+    margin: 0 auto;
+    max-height: 500px;
+}
+
+.tooltip {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    pointer-events: none;
+}
+
+.desc {
+    font-size: 12px;
+    color: #444;
+    margin-left: 3px;
+}

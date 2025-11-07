@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson@3"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>U.S. Abortion Travel Map (2020)</title>
+</head>
+<body>
+  <h2>How does clinic and provider availability affect residents' likelihood to travel out-of-state for abortion care?</h2>
+
+  <div id="filter-sliders">
+    <div>
+      <label>Show states with at most this level of <b>clinic</b> access:
+        <input type="range" id="clinicSlider" min="0" max="100" value="0">
+        <span id="clinicVal">0%</span>
+      </label>
+      <div class="slider-note">Clinic access = % of counties in the state that have at least one clinic.</div>
+    </div>
+
+    <div>
+      <label>Show states with at most this level of <b>provider</b> access:
+        <input type="range" id="providerSlider" min="0" max="100" value="0">
+        <span id="providerVal">0%</span>
+      </label>
+      <div class="slider-note">Provider access = % of counties in the state that have at least one abortion provider.</div>
+    </div>
+  </div>
+
+
+  <div id="graphs">
+    <div id="us-map-container" class="graph">
+        <div id="us-map-title" class="title">
+          % of residents obtaining abortions who traveled out of state for care, 2020
+        </div>
+        <svg id="us-map"></svg>
+        <div id="legend"></div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
